@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c ' *)",
+      "Bash(curl -L -o \"team1.jpg\" \"https://randomuser.me/api/portraits/men/52.jpg\")",
+      "Bash(curl -L -o \"team2.jpg\" \"https://randomuser.me/api/portraits/men/75.jpg\")",
+      "Bash(curl -L -o \"team3.jpg\" \"https://randomuser.me/api/portraits/women/44.jpg\")",
+      "Bash(curl -L -o \"team4.jpg\" \"https://randomuser.me/api/portraits/men/36.jpg\")"
+    ]
+  }
+}
