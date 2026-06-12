@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Actualités fiscales, réformes comptables, conseils de gestion et opportunités agricoles en Côte d'Ivoire — L'OMBILIC, cabinet multidisciplinaire à Abidjan.">
+  <title>Actualités &amp; Ressources – L'OMBILIC</title>
+  <link rel="shortcut icon" href="assets/hero2.jpg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="topbar-logo">
+        <img src="/assets/Logo_1.jpeg" alt="Logo L'OMBILIC" width="72">
+      </div>
+      <div class="topbar-contacts">
+        <span><i class="fa-regular fa-envelope"></i> lombilicsarl@gmail.com</span>
+        <span><i class="fa-solid fa-phone"></i> +225 27 24 58 96 08</span>
+        <span><i class="fa-solid fa-location-dot"></i> Cocody – Angré 8e Tranche, Abidjan</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE BANNER -->
+  <section class="page-banner">
+    <div class="page-banner-bg"></div>
+    <div class="hero-overlay"></div>
+
+    <nav class="hero-nav" id="hero-nav">
+      <button class="nav-hamburger" aria-label="Ouvrir le menu" onclick="document.getElementById('hero-nav').classList.toggle('open')">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li class="has-dropdown">
+          <a href="index.html#services" class="dropdown-toggle">Services <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="nav-dropdown">
+            <li><a href="services-comptable.html"><i class="fa-solid fa-calculator"></i> Assistance comptable &amp; fiscale</a></li>
+            <li><a href="services-etudes.html"><i class="fa-solid fa-lightbulb"></i> Études, conseil &amp; formation</a></li>
+            <li><a href="services-commerce.html"><i class="fa-solid fa-cart-shopping"></i> Commerce &amp; distribution</a></li>
+            <li><a href="services-agricole.html"><i class="fa-solid fa-seedling"></i> Prestations agricoles</a></li>
+          </ul>
+        </li>
+        <li><a href="realisations.html">Réalisations</a></li>
+        <li><a href="actualites.html" class="nav-active">Actualités</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-cta">Devis gratuit</button>
+    </nav>
+
+    <div class="page-banner-inner">
+      <div class="container">
+        <span class="section-label">Restez informé</span>
+        <h1>Actualités<br>&amp; Ressources</h1>
+        <p>Informations fiscales, réformes comptables, conseils de gestion et opportunités agricoles — l'essentiel pour piloter votre activité en Côte d'Ivoire.</p>
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+          <a href="index.html">Accueil</a>
+          <i class="fa-solid fa-chevron-right"></i>
+          <span>Actualités</span>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- À LA UNE -->
+  <section class="actu-featured">
+    <div class="container">
+      <article class="featured-card">
+        <div class="featured-img">
+          <img src="assets/actualites/actu-une.jpg" alt="Annexe fiscale 2026 Côte d'Ivoire" loading="lazy">
+          <span class="featured-badge"><i class="fa-solid fa-fire"></i> À la une</span>
+        </div>
+        <div class="featured-body">
+          <div class="actu-meta">
+            <span class="actu-cat">Fiscalité</span>
+            <span class="actu-date"><i class="fa-regular fa-calendar"></i> 5 juin 2026</span>
+            <span class="actu-read"><i class="fa-regular fa-clock"></i> 8 min</span>
+          </div>
+          <h2>Annexe fiscale 2026 : les mesures clés que toute entreprise ivoirienne doit connaître</h2>
+          <p>Nouvelles taxes, exonérations sectorielles, obligations déclaratives renforcées : l'annexe fiscale 2026 introduit des changements majeurs pour les entreprises de toutes tailles. Notre équipe a analysé le texte en détail et vous livre l'essentiel à retenir — ainsi que les actions à engager dès maintenant pour rester en conformité.</p>
+          <a href="#" class="featured-link">Lire l'analyse complète <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ARTICLES -->
+  <section class="actu-articles" id="articles">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-label">Nos publications</span>
+        <h2>Derniers articles</h2>
+        <p class="section-sub">Des analyses pratiques rédigées par nos consultants, classées par domaine d'expertise.</p>
+      </div>
+
+      <div class="portfolio-filters" role="tablist">
+        <button class="filter-btn active" data-filter="all">
+          <i class="fa-solid fa-grip"></i> Tous
+        </button>
+        <button class="filter-btn" data-filter="fiscal">
+          <i class="fa-solid fa-file-invoice-dollar"></i> Informations fiscales
+        </button>
+        <button class="filter-btn" data-filter="compta">
+          <i class="fa-solid fa-calculator"></i> Réformes comptables
+        </button>
+        <button class="filter-btn" data-filter="gestion">
+          <i class="fa-solid fa-chart-line"></i> Conseils de gestion
+        </button>
+        <button class="filter-btn" data-filter="agri">
+          <i class="fa-solid fa-seedling"></i> Opportunités agricoles
+        </button>
+      </div>
+
+      <div class="actu-grid" id="actu-grid">
+
+        <!-- ── FISCALITÉ ── -->
+        <article class="actu-card" data-category="fiscal">
+          <div class="actu-card-img">
+            <img src="assets/actualites/actu-fiscal-1.jpg" alt="Facturation électronique normalisée" loading="lazy">
+          </div>
+          <div class="actu-card-body">
+            <div class="actu-meta">
+              <span class="actu-cat">Fiscalité</span>
+              <span class="actu-date"><i class="fa-regular fa-calendar"></i> 28 mai 2026</span>
+            </div>
+            <h4>Facture électronique normalisée : êtes-vous prêt pour la FNE ?</h4>
+            <p>La généralisation de la facture normalisée électronique change les pratiques de facturation. Qui est concerné, quel calendrier, quelles sanctions en cas de retard.</p>
+            <a href="#" class="actu-card-link">Lire la suite <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="actu-card" data-category="fiscal">
+          <div class="actu-card-img">
+            <img src="assets/actualites/actu-fiscal-2.jpg" alt="Contrôle fiscal préparation" loading="lazy">
+          </div>
+          <div class="actu-card-body">
+            <div class="actu-meta">
+              <span class="actu-cat">Fiscalité</span>
+              <span class="actu-date"><i class="fa-regular fa-calendar"></i> 12 mai 2026</span>
+            </div>
+            <h4>Contrôle fiscal : 7 réflexes pour l'aborder sereinement</h4>
+            <p>Un contrôle de la DGI n'est pas une fatalité. Documents à tenir à jour, droits du contribuable, déroulement de la procédure : notre guide pratique.</p>
+            <a href="#" class="actu-card-link">Lire la suite <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="actu-card" data-category="fiscal">
+          <div class="actu-card-img">
+            <img src="assets/actualites/actu-fiscal-3.jpg" alt="Patente et taxes locales" loading="lazy">
+          </div>
+          <div class="actu-card-body">
+            <div class="actu-meta">
+              <span class="actu-cat">Fiscalité</span>
+              <span class="actu-date"><i class="fa-regular fa-calendar"></i> 22 avril 2026</span>
+            </div>
+            <h4>Patente 2026 : mode de calcul, exonérations et échéances</h4>
+            <p>Comment se calcule la contribution des patentes, qui peut en être exonéré et quelles sont les dates limites de paiement à ne pas manquer cette année.</p>
+            <a href="#" class="actu-card-link">Lire la suite <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- ── COMPTABILITÉ ── -->
+        <article class="actu-card" data-category="compta">
+          <div class="actu-card-img">
+            <img src="assets/actualites/actu-compta-1.jpg" alt="SYSCOHADA révisé" loading="lazy">
+          </div>
+          <div class="actu-card-body">
+            <div class="actu-meta">
+              <span class="actu-cat">Comptabilité</span>
+              <span class="actu-date"><i class="fa-regular fa-calendar"></i> 19 mai 2026</span>
+            </div>
+            <h4>SYSCOHADA révisé : ce qui change pour vos états financiers</h4>
+            <p>Présentation des principales évolutions du référentiel comptable OHADA et de leur impact concret sur l'établissement de vos états financiers annuels.</p>
+            <a href="#" class="actu-card-link">Lire la suite <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="actu-card" data-category="compta">
+          <div class="actu-card-img">
+            <img src="assets/actualites/actu-compta-2.jpg" alt="Clôture des comptes annuels" loading="lazy">
+          </div>
+          <div class="actu-card-body">
+            <div class="actu-meta">
+              <span class="actu-cat">Comptabilité</span>
+              <span class="actu-date"><i class="fa-regular fa-calendar"></i> 30 avril 2026</span>
+            </div>
+            <h4>Clôture des comptes : la checklist complète avant le 30 juin</h4>
+            <p>Inventaires, rapprochements bancaires, provisions, amortissements : les étapes incontournables pour des états financiers fiables et déposés dans les délais.</p>
+            <a href="#" class="actu-card-link">Lire la suite <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="actu-card" data-category="compta">
+          <div class="actu-card-img">
+            <img src="assets/actualites/actu-compta-3.jpg" alt="Digitalisation comptable" loading="lazy">
+          </div>
+          <div class="actu-card-body">
+            <div class="actu-meta">
+              <span class="actu-cat">Comptabilité</span>
+              <span class="actu-date"><i class="fa-regular fa-calendar"></i> 8 avril 2026</span>
+            </div>
+            <h4>Digitaliser sa comptabilité : par où commencer quand on est une TPE ?</h4>
+            <p>Outils accessibles, bonnes pratiques de numérisation des pièces, organisation du classement : un plan d'action simple pour passer au numérique sans se ruiner.</p>
+            <a href="#" class="actu-card-link">Lire la suite <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- ── GESTION ── -->
+        <article class="actu-card" data-category="gestion">
+          <div class="actu-card-img">
+            <img src="assets/actualites/actu-gestion-1.jpg" alt="Tableaux de bord de gestion" loading="lazy">
+          </div>
+          <div class="actu-card-body">
+            <div class="actu-meta">
+              <span class="actu-cat">Gestion</span>
+              <span class="actu-date"><i class="fa-regular fa-calendar"></i> 26 mai 2026</span>
+            </div>
+            <h4>5 indicateurs que tout dirigeant de PME devrait suivre chaque mois</h4>
+            <p>Trésorerie nette, délai de paiement clients, marge brute… Les indicateurs simples qui permettent d'anticiper les difficultés plutôt que de les subir.</p>
+            <a href="#" class="actu-card-link">Lire la suite <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="actu-card" data-category="gestion">
+          <div class="actu-card-img">
+            <img src="assets/actualites/actu-gestion-2.jpg" alt="Gestion de trésorerie" loading="lazy">
+          </div>
+          <div class="actu-card-body">
+            <div class="actu-meta">
+              <span class="actu-cat">Gestion</span>
+              <span class="actu-date"><i class="fa-regular fa-calendar"></i> 5 mai 2026</span>
+            </div>
+            <h4>Tensions de trésorerie : 5 leviers à activer avant d'aller voir la banque</h4>
+            <p>Relance clients structurée, négociation fournisseurs, gestion des stocks : des solutions concrètes et immédiates pour redonner de l'air à votre trésorerie.</p>
+            <a href="#" class="actu-card-link">Lire la suite <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="actu-card" data-category="gestion">
+          <div class="actu-card-img">
+            <img src="assets/actualites/actu-gestion-3.jpg" alt="Business plan financement" loading="lazy">
+          </div>
+          <div class="actu-card-body">
+            <div class="actu-meta">
+              <span class="actu-cat">Gestion</span>
+              <span class="actu-date"><i class="fa-regular fa-calendar"></i> 14 avril 2026</span>
+            </div>
+            <h4>Business plan : les 6 erreurs qui font fuir les financeurs</h4>
+            <p>Hypothèses irréalistes, étude de marché bâclée, plan de trésorerie absent… Ce que les banquiers et investisseurs regardent vraiment dans votre dossier.</p>
+            <a href="#" class="actu-card-link">Lire la suite <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- ── AGRICULTURE ── -->
+        <article class="actu-card" data-category="agri">
+          <div class="actu-card-img">
+            <img src="assets/actualites/actu-agri-1.jpg" alt="Campagne cacao" loading="lazy">
+          </div>
+          <div class="actu-card-body">
+            <div class="actu-meta">
+              <span class="actu-cat">Agriculture</span>
+              <span class="actu-date"><i class="fa-regular fa-calendar"></i> 2 juin 2026</span>
+            </div>
+            <h4>Campagne cacao 2026 : ce que le nouveau prix bord champ change pour les producteurs</h4>
+            <p>Analyse de la fixation du prix garanti, impact sur les revenus des planteurs et conseils pour optimiser la commercialisation de votre production.</p>
+            <a href="#" class="actu-card-link">Lire la suite <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="actu-card" data-category="agri">
+          <div class="actu-card-img">
+            <img src="assets/actualites/actu-agri-2.jpg" alt="Financement coopératives agricoles" loading="lazy">
+          </div>
+          <div class="actu-card-body">
+            <div class="actu-meta">
+              <span class="actu-cat">Agriculture</span>
+              <span class="actu-date"><i class="fa-regular fa-calendar"></i> 15 mai 2026</span>
+            </div>
+            <h4>Financements agricoles : panorama des dispositifs accessibles aux coopératives</h4>
+            <p>Fonds publics, lignes de crédit bancaires dédiées, programmes des bailleurs internationaux : où chercher et comment monter un dossier solide.</p>
+            <a href="#" class="actu-card-link">Lire la suite <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="actu-card" data-category="agri">
+          <div class="actu-card-img">
+            <img src="assets/actualites/actu-agri-3.jpg" alt="Intrants agricoles subventions" loading="lazy">
+          </div>
+          <div class="actu-card-body">
+            <div class="actu-meta">
+              <span class="actu-cat">Agriculture</span>
+              <span class="actu-date"><i class="fa-regular fa-calendar"></i> 20 avril 2026</span>
+            </div>
+            <h4>Intrants subventionnés : comment en bénéficier pour la prochaine campagne</h4>
+            <p>Conditions d'éligibilité, circuits de distribution agréés et démarches à effectuer pour accéder aux semences et engrais à prix réduits.</p>
+            <a href="#" class="actu-card-link">Lire la suite <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+      </div><!-- .actu-grid -->
+
+      <div class="portfolio-empty" id="actu-empty" style="display:none;">
+        <i class="fa-solid fa-newspaper"></i>
+        <p>Aucun article dans cette catégorie pour l'instant.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CALENDRIER FISCAL -->
+  <section class="fiscal-cal">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-label">Ressource pratique</span>
+        <h2>Calendrier fiscal &amp; social</h2>
+        <p class="section-sub">Les échéances récurrentes à ne jamais manquer pour rester en conformité en Côte d'Ivoire.</p>
+      </div>
+
+      <div class="fiscal-cal-grid">
+
+        <div class="fiscal-cal-card">
+          <div class="fiscal-cal-day">
+            <span class="fiscal-cal-num">10</span>
+            <span class="fiscal-cal-freq">de chaque mois</span>
+          </div>
+          <div class="fiscal-cal-info">
+            <h4>TVA &amp; taxes assimilées</h4>
+            <p>Déclaration et paiement de la TVA du mois précédent pour les entreprises au régime du réel normal.</p>
+          </div>
+        </div>
+
+        <div class="fiscal-cal-card">
+          <div class="fiscal-cal-day">
+            <span class="fiscal-cal-num">15</span>
+            <span class="fiscal-cal-freq">de chaque mois</span>
+          </div>
+          <div class="fiscal-cal-info">
+            <h4>ITS &amp; cotisations CNPS</h4>
+            <p>Impôts sur traitements et salaires, et déclaration des cotisations sociales auprès de la CNPS.</p>
+          </div>
+        </div>
+
+        <div class="fiscal-cal-card">
+          <div class="fiscal-cal-day">
+            <span class="fiscal-cal-num">20</span>
+            <span class="fiscal-cal-freq">de chaque mois</span>
+          </div>
+          <div class="fiscal-cal-info">
+            <h4>Acomptes d'impôt BIC</h4>
+            <p>Versement des acomptes mensuels d'impôt sur les bénéfices industriels et commerciaux.</p>
+          </div>
+        </div>
+
+        <div class="fiscal-cal-card">
+          <div class="fiscal-cal-day">
+            <span class="fiscal-cal-num">30<small>/04</small></span>
+            <span class="fiscal-cal-freq">chaque année</span>
+          </div>
+          <div class="fiscal-cal-info">
+            <h4>Déclaration de résultats</h4>
+            <p>Dépôt de la déclaration annuelle de résultats de l'exercice clos au 31 décembre.</p>
+          </div>
+        </div>
+
+        <div class="fiscal-cal-card">
+          <div class="fiscal-cal-day">
+            <span class="fiscal-cal-num">30<small>/06</small></span>
+            <span class="fiscal-cal-freq">chaque année</span>
+          </div>
+          <div class="fiscal-cal-info">
+            <h4>États financiers SYSCOHADA</h4>
+            <p>Date limite de dépôt des états financiers annuels auprès du guichet unique.</p>
+          </div>
+        </div>
+
+        <div class="fiscal-cal-card fiscal-cal-card--cta">
+          <i class="fa-solid fa-bell"></i>
+          <h4>Ne ratez plus aucune échéance</h4>
+          <p>Confiez-nous le suivi de vos obligations déclaratives.</p>
+          <a href="contact.html">Être accompagné <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RESSOURCES TÉLÉCHARGEABLES -->
+  <section class="resources">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-label">Documents utiles</span>
+        <h2>Ressources à télécharger</h2>
+        <p class="section-sub">Guides pratiques et brochures élaborés par nos consultants, en libre accès.</p>
+      </div>
+
+      <div class="resources-grid">
+
+        <a href="#" class="resource-card">
+          <div class="resource-icon"><i class="fa-solid fa-file-pdf"></i></div>
+          <div class="resource-info">
+            <h4>Brochure du cabinet L'OMBILIC</h4>
+            <span>Présentation de nos services et références</span>
+          </div>
+          <span class="resource-dl"><i class="fa-solid fa-download"></i> PDF</span>
+        </a>
+
+        <a href="#" class="resource-card">
+          <div class="resource-icon"><i class="fa-solid fa-file-pdf"></i></div>
+          <div class="resource-info">
+            <h4>Calendrier fiscal 2026 complet</h4>
+            <span>Toutes les échéances fiscales et sociales de l'année</span>
+          </div>
+          <span class="resource-dl"><i class="fa-solid fa-download"></i> PDF</span>
+        </a>
+
+        <a href="#" class="resource-card">
+          <div class="resource-icon"><i class="fa-solid fa-file-pdf"></i></div>
+          <div class="resource-info">
+            <h4>Checklist création d'entreprise en CI</h4>
+            <span>Étapes, documents et coûts pour bien démarrer</span>
+          </div>
+          <span class="resource-dl"><i class="fa-solid fa-download"></i> PDF</span>
+        </a>
+
+        <a href="#" class="resource-card">
+          <div class="resource-icon"><i class="fa-solid fa-file-pdf"></i></div>
+          <div class="resource-info">
+            <h4>Guide de gestion des coopératives</h4>
+            <span>Gouvernance, comptabilité et conformité OHADA</span>
+          </div>
+          <span class="resource-dl"><i class="fa-solid fa-download"></i> PDF</span>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-inner">
+        <div class="newsletter-text">
+          <span class="section-label">Newsletter</span>
+          <h2>L'essentiel fiscal &amp; gestion, une fois par mois</h2>
+          <p>Recevez nos analyses, le rappel des échéances et les opportunités du moment, directement dans votre boîte mail. Pas de spam, désinscription en un clic.</p>
+        </div>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); this.querySelector('.newsletter-success').style.display='flex'; this.querySelector('.newsletter-fields').style.display='none';">
+          <div class="newsletter-fields">
+            <input type="email" placeholder="Votre adresse e-mail" required aria-label="Adresse e-mail">
+            <button type="submit">S'abonner <i class="fa-solid fa-paper-plane"></i></button>
+          </div>
+          <div class="newsletter-success" style="display:none;">
+            <i class="fa-solid fa-circle-check"></i> Merci ! Votre inscription est bien prise en compte.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="/assets/Logo_1.jpeg" alt="L'OMBILIC" width="58">
+          <p>Cabinet multidisciplinaire de prestations en assistance comptable, études, conseil, commerce et développement agricole.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:lombilicsarl@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="index.html#services">Nos services</a></li>
+            <li><a href="realisations.html">Réalisations</a></li>
+            <li><a href="actualites.html">Actualités</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Nos services</h4>
+          <ul>
+            <li><a href="services-comptable.html">Assistance comptable &amp; fiscale</a></li>
+            <li><a href="services-etudes.html">Études, conseil &amp; formation</a></li>
+            <li><a href="services-commerce.html">Commerce &amp; distribution</a></li>
+            <li><a href="services-agricole.html">Prestations agricoles</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-location-dot"></i> Cocody – Angré 8e Tranche,<br>Carrefour Prière, Abidjan</li>
+            <li><i class="fa-solid fa-phone"></i> +225 27 24 58 96 08</li>
+            <li><i class="fa-regular fa-envelope"></i> lombilicsarl@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 L'OMBILIC SARL &nbsp;·&nbsp; RCCM CI-ABJ-03-2024-B13-00370 &nbsp;·&nbsp; N° CC 2400146V</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* ── Filtre des articles ── */
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards      = document.querySelectorAll('.actu-card');
+    const emptyMsg   = document.getElementById('actu-empty');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        let visible = 0;
+        cards.forEach(card => {
+          const match = filter === 'all' || card.dataset.category === filter;
+          card.style.display = match ? '' : 'none';
+          if (match) visible++;
+        });
+        emptyMsg.style.display = visible === 0 ? 'flex' : 'none';
+      });
+    });
+  </script>
+
+</body>
+</html>

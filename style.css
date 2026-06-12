@@ -246,28 +246,19 @@ button, input, textarea, select { font: inherit; }
   padding: 5rem 3rem 4rem;
   max-width: 960px;
   width: 100%;
+  margin: 0 auto;
 }
 
 .hero-content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 0;
+  width: 100%;
+  text-align: center;
 }
 
-.hero-badge {
-  display: inline-block;
-  background: rgba(232, 160, 32, 0.15);
-  border: 1px solid rgba(232, 160, 32, 0.6);
-  color: var(--primary);
-  font-family: 'Poppins', sans-serif;
-  font-size: 0.72rem;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  padding: 0.38rem 1.1rem;
-  border-radius: 50px;
-  margin-bottom: 1.6rem;
-}
 
 .hero-inner h1 {
   font-size: clamp(2.2rem, 5vw, 3.8rem);
@@ -288,7 +279,7 @@ button, input, textarea, select { font: inherit; }
   color: rgba(255, 255, 255, 0.78);
   line-height: 1.85;
   max-width: 560px;
-  margin-bottom: 2.6rem;
+  margin: 0 auto 2.6rem;
   font-weight: 300;
 }
 
@@ -300,6 +291,7 @@ button, input, textarea, select { font: inherit; }
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .btn-primary {
@@ -1505,7 +1497,9 @@ button, input, textarea, select { font: inherit; }
   flex: 1;
   display: flex;
   align-items: flex-end;
+  justify-content: center;
   padding: 3rem 0 4rem;
+  text-align: center;
 }
 
 .page-banner-inner .section-label {
@@ -1528,12 +1522,13 @@ button, input, textarea, select { font: inherit; }
   max-width: 520px;
   line-height: 1.8;
   font-weight: 300;
-  margin-bottom: 1.5rem;
+  margin: 0 auto 1.5rem;
 }
 
 .breadcrumb {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.45);
@@ -2175,6 +2170,573 @@ button, input, textarea, select { font: inherit; }
     grid-column: auto;
   }
 }
+
+/* =============================================
+   PAGE ACTUALITÉS & RESSOURCES
+   ============================================= */
+
+/* ── À la une ── */
+.actu-featured {
+  padding: 5rem 0 3rem;
+  background: var(--surface);
+}
+
+.featured-card {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 20px rgba(15, 23, 42, 0.05);
+}
+
+.featured-img {
+  position: relative;
+  min-height: 340px;
+}
+
+.featured-img img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.featured-badge {
+  position: absolute;
+  top: 1.2rem;
+  left: 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+}
+
+.featured-body {
+  padding: 3rem 3.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.featured-body h2 {
+  font-size: clamp(1.4rem, 2.2vw, 1.9rem);
+  color: var(--text);
+  line-height: 1.3;
+  margin: 1rem 0;
+}
+
+.featured-body p {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.75;
+  margin-bottom: 1.75rem;
+}
+
+.featured-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--primary-dark);
+  font-weight: 600;
+  font-size: 0.88rem;
+  text-decoration: none;
+  transition: gap 0.25s ease;
+}
+
+.featured-link:hover {
+  gap: 1rem;
+}
+
+/* ── Méta commune (catégorie / date / lecture) ── */
+.actu-meta {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  flex-wrap: wrap;
+}
+
+.actu-cat {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.8rem;
+  border-radius: 999px;
+  color: var(--primary-dark);
+  background: rgba(241, 179, 16, 0.1);
+  border: 1px solid rgba(241, 179, 16, 0.35);
+}
+
+.actu-date,
+.actu-read {
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.actu-date i,
+.actu-read i {
+  color: var(--primary-dark);
+  margin-right: 0.3rem;
+}
+
+/* ── Grille d'articles ── */
+.actu-articles {
+  padding: 4rem 0 6rem;
+  background: var(--surface);
+}
+
+.actu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+}
+
+.actu-card {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.actu-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+  z-index: 2;
+}
+
+.actu-card:hover::before {
+  transform: scaleX(1);
+}
+
+.actu-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 50px rgba(15, 23, 42, 0.12);
+  border-color: rgba(241, 179, 16, 0.4);
+}
+
+.actu-card-img {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.actu-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.actu-card:hover .actu-card-img img {
+  transform: scale(1.07);
+}
+
+.actu-card-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.actu-card-body h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.4;
+  margin: 0.85rem 0 0.6rem;
+}
+
+.actu-card-body p {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  line-height: 1.65;
+  margin: 0 0 1.2rem;
+  flex-grow: 1;
+}
+
+.actu-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary-dark);
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: gap 0.25s ease;
+}
+
+.actu-card-link:hover {
+  gap: 0.9rem;
+}
+
+/* ── Calendrier fiscal ── */
+.fiscal-cal {
+  padding: 6rem 0;
+  background-color: #f4f7fb;
+  background-image: radial-gradient(circle, rgba(26, 95, 133, 0.07) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+.fiscal-cal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.fiscal-cal-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.4rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1.8rem;
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.fiscal-cal-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.1);
+  border-color: rgba(241, 179, 16, 0.4);
+}
+
+.fiscal-cal-day {
+  flex-shrink: 0;
+  width: 76px;
+  text-align: center;
+  background: var(--secondary-dark);
+  border-radius: 4px;
+  padding: 0.9rem 0.4rem;
+}
+
+.fiscal-cal-num {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.fiscal-cal-num small {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.fiscal-cal-freq {
+  display: block;
+  font-size: 0.58rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 0.4rem;
+  font-weight: 500;
+}
+
+.fiscal-cal-info h4 {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0 0 0.45rem;
+}
+
+.fiscal-cal-info p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Carte CTA du calendrier */
+.fiscal-cal-card--cta {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+  background: var(--secondary-dark);
+  border-color: var(--secondary-dark);
+}
+
+.fiscal-cal-card--cta i {
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+.fiscal-cal-card--cta h4 {
+  color: #fff;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.fiscal-cal-card--cta p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.82rem;
+  margin: 0;
+}
+
+.fiscal-cal-card--cta a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.84rem;
+  text-decoration: none;
+  margin-top: 0.4rem;
+  transition: gap 0.25s ease;
+}
+
+.fiscal-cal-card--cta a:hover {
+  gap: 0.9rem;
+}
+
+/* ── Ressources téléchargeables ── */
+.resources {
+  padding: 6rem 0;
+  background: var(--surface);
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.resource-card {
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1.5rem 1.8rem;
+  text-decoration: none;
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+}
+
+.resource-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--primary);
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+}
+
+.resource-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  background: rgba(241, 179, 16, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.resource-icon i {
+  font-size: 1.3rem;
+  color: var(--primary-dark);
+}
+
+.resource-info {
+  flex-grow: 1;
+}
+
+.resource-info h4 {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0 0 0.25rem;
+}
+
+.resource-info span {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.resource-dl {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--primary-dark);
+  border: 1.5px solid rgba(241, 179, 16, 0.45);
+  border-radius: 999px;
+  padding: 0.4rem 1rem;
+  transition: background var(--transition), color var(--transition);
+}
+
+.resource-card:hover .resource-dl {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
+/* ── Newsletter ── */
+.newsletter {
+  padding: 5rem 0;
+  background: var(--secondary-dark);
+}
+
+.newsletter-inner {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.newsletter-text .section-label {
+  color: var(--primary);
+}
+
+.newsletter-text h2 {
+  color: #fff;
+  font-size: clamp(1.4rem, 2.4vw, 2rem);
+  margin: 0.75rem 0 1rem;
+}
+
+.newsletter-text p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  line-height: 1.75;
+  margin: 0;
+}
+
+.newsletter-fields {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.newsletter-fields input {
+  flex-grow: 1;
+  padding: 0.95rem 1.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.88rem;
+  outline: none;
+  transition: border-color var(--transition);
+}
+
+.newsletter-fields input::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.newsletter-fields input:focus {
+  border-color: var(--primary);
+}
+
+.newsletter-fields button {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.95rem 1.8rem;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background var(--transition);
+}
+
+.newsletter-fields button:hover {
+  background: var(--primary-dark);
+}
+
+.newsletter-success {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 0.92rem;
+}
+
+.newsletter-success i {
+  font-size: 1.3rem;
+}
+
+/* ── Actualités responsive ── */
+@media (max-width: 900px) {
+  .featured-card {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-img {
+    min-height: 240px;
+  }
+
+  .featured-body {
+    padding: 2.2rem;
+  }
+
+  .actu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fiscal-cal-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .resources-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .newsletter-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .actu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fiscal-cal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .newsletter-fields {
+    flex-direction: column;
+  }
+
+  .featured-body {
+    padding: 1.8rem;
+  }
+}
+
 
 /* =============================================
    NAV — DROPDOWN (CSS pur)
