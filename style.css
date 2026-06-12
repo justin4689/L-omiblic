@@ -3473,6 +3473,24 @@ button, input, textarea, select { font: inherit; }
 
 
 /* =============================================
+   ANIMATIONS — apparition au scroll
+   ============================================= */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(26px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+    will-change: opacity, transform;
+  }
+
+  .reveal-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+/* =============================================
    NAV — DROPDOWN (CSS pur)
    ============================================= */
 
