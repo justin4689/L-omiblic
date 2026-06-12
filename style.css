@@ -213,6 +213,8 @@ button, input, textarea, select { font: inherit; }
 }
 
 .nav-cta {
+  display: inline-block;
+  text-decoration: none;
   background: var(--primary);
   color: #fff;
   border: none;
@@ -3228,6 +3230,244 @@ button, input, textarea, select { font: inherit; }
   .contact-form .form-row {
     grid-template-columns: 1fr;
     gap: 0;
+  }
+}
+
+
+/* =============================================
+   PAGE DEMANDE DE DEVIS
+   ============================================= */
+.devis-main {
+  padding: 5rem 0 6rem;
+  background: var(--surface);
+}
+
+.devis-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.devis-form-wrap .section-label {
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+.devis-form-wrap h2 {
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  color: var(--text);
+  margin-bottom: 0.9rem;
+}
+
+/* Étapes numérotées */
+.devis-step-label {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin: 2.2rem 0 1.2rem;
+}
+
+.devis-step-label:first-of-type {
+  margin-top: 0;
+}
+
+.devis-step-num {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.devis-step-label h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  color: var(--text);
+  margin: 0;
+}
+
+/* Choix du service en cartes radio */
+.devis-services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.devis-service-option {
+  cursor: pointer;
+}
+
+.devis-service-option input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.devis-service-card {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 1.1rem 1.3rem;
+  background: var(--background);
+  border: 1.5px solid var(--border);
+  border-radius: 4px;
+  transition: border-color var(--transition), background var(--transition), box-shadow var(--transition);
+}
+
+.devis-service-card i {
+  font-size: 1.15rem;
+  color: var(--primary-dark);
+  width: 1.4rem;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.devis-service-card span {
+  font-size: 0.83rem;
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+.devis-service-option:hover .devis-service-card {
+  border-color: rgba(241, 179, 16, 0.5);
+}
+
+.devis-service-option input:checked + .devis-service-card {
+  border-color: var(--primary);
+  background: rgba(241, 179, 16, 0.07);
+  box-shadow: 0 0 0 3px rgba(241, 179, 16, 0.15);
+}
+
+.devis-service-option input:focus-visible + .devis-service-card {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Panneau latéral */
+.devis-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.devis-process {
+  background: var(--secondary-dark);
+  border-radius: 4px;
+  padding: 2.2rem 2rem;
+}
+
+.devis-process h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem;
+  color: #fff;
+  margin-bottom: 1.6rem;
+}
+
+.devis-process ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.devis-process li {
+  display: flex;
+  gap: 1.1rem;
+  align-items: flex-start;
+}
+
+.devis-process-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1;
+  flex-shrink: 0;
+  padding-top: 0.15rem;
+}
+
+.devis-process strong {
+  display: block;
+  font-size: 0.88rem;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.devis-process p {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Engagements */
+.devis-engagements {
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1.8rem 2rem;
+}
+
+.devis-engagements h4 {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  color: var(--text);
+  margin-bottom: 1.1rem;
+}
+
+.devis-engagements h4 i {
+  color: var(--primary-dark);
+}
+
+.devis-engagements ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.devis-engagements li {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.devis-engagements li i {
+  color: var(--primary);
+  font-size: 0.9rem;
+}
+
+/* Devis responsive */
+@media (max-width: 900px) {
+  .devis-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .devis-services {
+    grid-template-columns: 1fr;
   }
 }
 
