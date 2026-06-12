@@ -30,36 +30,31 @@
   <!-- HERO SECTION -->
   <section class="hero">
 
-    <!-- Fonds en crossfade -->
     <div class="hero-bg hero-bg-1"></div>
     <div class="hero-bg hero-bg-2"></div>
-
-    <!-- Overlay dégradé -->
     <div class="hero-overlay"></div>
 
-    <!-- NAVIGATION -->
     <nav class="hero-nav" id="hero-nav">
       <button class="nav-hamburger" aria-label="Ouvrir le menu" onclick="document.getElementById('hero-nav').classList.toggle('open')">
         <i class="fa-solid fa-bars"></i>
       </button>
       <ul class="nav-links">
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">À propos</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Réalisations</a></li>
-        <li><a href="#">Actualités</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="realisations.html">Réalisations</a></li>
+        <li><a href="actualites.html">Actualités</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
       <button class="nav-cta">Devis gratuit</button>
     </nav>
 
-    <!-- CONTENU HERO -->
     <div class="hero-inner">
       <div class="hero-content">
         <h1>Le professionnalisme<br>au service de votre <span>performance</span></h1>
         <p>Votre partenaire de confiance pour l'accompagnement comptable, fiscal et social, le renforcement des capacités, les études et le développement de vos entreprises.</p>
         <div class="hero-btns">
-          <a href="#devis" class="btn-primary">Demander un devis</a>
+          <a href="devis.html" class="btn-primary">Demander un devis</a>
           <a href="#services" class="btn-secondary">Nos services →</a>
         </div>
       </div>
@@ -67,8 +62,7 @@
 
   </section>
 
-  <!-- À PROPOS -->
-
+  <!-- À PROPOS (condensé) -->
   <section class="about" id="a-propos">
     <div class="container">
 
@@ -80,7 +74,6 @@
 
       <div class="about-grid">
 
-        <!-- Texte + faits légaux -->
         <div class="about-text">
           <p>L'OMBILIC SARL est un cabinet de prestations spécialisé en <strong>assistance comptable, fiscale et sociale</strong>, en <strong>études, conseil et formation</strong>, en <strong>commerce et distribution</strong>, ainsi qu'en <strong>prestations agricoles</strong>.</p>
           <p>Basé à Abidjan, notre cabinet met son expertise au service des entreprises et des porteurs de projets avec un engagement fort pour la qualité, la rigueur et la confidentialité.</p>
@@ -110,7 +103,6 @@
           </div>
         </div>
 
-        <!-- Carte visuelle -->
         <div class="about-visual">
           <div class="about-card">
             <img src="/assets/Logo_2.jpeg" alt="Logo L'OMBILIC" class="about-card-logo">
@@ -136,114 +128,219 @@
 
       </div>
 
-      <!-- Vision / Mission / Valeurs -->
-      <div class="vmv-grid">
-
-        <div class="vmv-card">
-          <div class="vmv-head">
-            <div class="vmv-icon"><i class="fa-solid fa-eye"></i></div>
-            <h3>Notre Vision</h3>
-          </div>
-          <p>Être le cabinet de référence en Côte d'Ivoire pour l'accompagnement multidisciplinaire des entreprises et des projets de développement.</p>
-          <span class="vmv-num">01</span>
-        </div>
-
-        <div class="vmv-card vmv-card--accent">
-          <div class="vmv-head">
-            <div class="vmv-icon"><i class="fa-solid fa-bullseye"></i></div>
-            <h3>Notre Mission</h3>
-          </div>
-          <p>Offrir des prestations de haute qualité qui contribuent à la performance, à la conformité et au développement durable de nos clients.</p>
-          <span class="vmv-num">02</span>
-        </div>
-
-        <div class="vmv-card">
-          <div class="vmv-head">
-            <div class="vmv-icon"><i class="fa-solid fa-gem"></i></div>
-            <h3>Nos Valeurs</h3>
-          </div>
-          <div class="vmv-tags">
-            <span>Professionnalisme</span>
-            <span>Rigueur &amp; confidentialité</span>
-            <span>Écoute &amp; proximité</span>
-            <span>Innovation</span>
-          </div>
-          <span class="vmv-num">03</span>
-        </div>
-
-      </div>
-
-      <!-- ÉQUIPE -->
-      <div class="team-section">
-        <div class="team-header">
-          <span class="section-label">Notre Équipe</span>
-          <h2>Nos principaux consultants</h2>
-          <p class="section-sub">Une équipe pluridisciplinaire engagée au service de votre performance.</p>
-        </div>
-
-        <div class="team-grid">
-
-          <!-- Consultant 1 — remplacer par les vraies données -->
-          <div class="team-card">
-            <div class="team-avatar">
-              <img src="/assets/team1.jpg" alt="Consultant 1">
-            </div>
-            <h3>Prénom NOM</h3>
-            <span class="team-role">Directeur Général · Expert Comptable</span>
-            <p>Spécialiste en assistance comptable et fiscale, accompagne les entreprises dans leur conformité et leur performance financière.</p>
-            <div class="team-links">
-              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href="mailto:lombilicsarl@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
-            </div>
-          </div>
-
-          <!-- Consultant 2 -->
-          <div class="team-card">
-            <div class="team-avatar">
-              <img src="/assets/team2.jpg" alt="Consultant 2">
-            </div>
-            <h3>Prénom NOM</h3>
-            <span class="team-role">Consultant Senior · Études &amp; Conseil</span>
-            <p>Expert en études de faisabilité, montage de projets et conseil en gestion, avec une forte expérience dans la sous-région.</p>
-            <div class="team-links">
-              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href="mailto:lombilicsarl@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
-            </div>
-          </div>
-
-          <!-- Consultant 3 -->
-          <div class="team-card">
-            <div class="team-avatar">
-              <img src="/assets/team3.jpg" alt="Consultant 3">
-            </div>
-            <h3>Prénom NOM</h3>
-            <span class="team-role">Consultant · Formation &amp; Agriculture</span>
-            <p>Spécialiste en renforcement des capacités et en développement agricole, accompagne les coopératives et les producteurs.</p>
-            <div class="team-links">
-              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href="mailto:lombilicsarl@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
-            </div>
-          </div>
-
-          <!-- Consultant 4 -->
-          <div class="team-card">
-            <div class="team-avatar">
-              <img src="/assets/team4.jpg" alt="Consultant 4">
-            </div>
-            <h3>Prénom NOM</h3>
-            <span class="team-role">Chargé de Commerce &amp; Distribution</span>
-            <p>Responsable des activités de fournitures, d'approvisionnement et de représentation commerciale du cabinet.</p>
-            <div class="team-links">
-              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href="mailto:lombilicsarl@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
-            </div>
-          </div>
-
-        </div>
+      <div class="about-cta">
+        <a href="a-propos.html" class="btn-outline">Notre équipe &amp; notre histoire <i class="fa-solid fa-arrow-right"></i></a>
       </div>
 
     </div>
   </section>
+
+  <!-- NOS DOMAINES D'EXPERTISE -->
+  <section class="services" id="services">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-label">Ce que nous faisons</span>
+        <h2>Nos domaines d'expertise</h2>
+        <p class="section-sub">Quatre pôles d'activité complémentaires pour accompagner votre performance à chaque étape.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card">
+          <span class="service-num">01</span>
+          <div class="service-icon"><i class="fa-solid fa-calculator"></i></div>
+          <h3>Assistance comptable, fiscale &amp; sociale</h3>
+          <p>Tenue de comptabilité, états financiers, déclarations fiscales, gestion de la paie et suivi des obligations sociales.</p>
+          <a href="services.html#comptable" class="service-link">Découvrir <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card">
+          <span class="service-num">02</span>
+          <div class="service-icon"><i class="fa-solid fa-lightbulb"></i></div>
+          <h3>Études, conseil &amp; formation</h3>
+          <p>Études de faisabilité, plans d'affaires, conseil en gestion, renforcement des capacités et formation professionnelle.</p>
+          <a href="services.html#etudes" class="service-link">Découvrir <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card">
+          <span class="service-num">03</span>
+          <div class="service-icon"><i class="fa-solid fa-boxes-stacking"></i></div>
+          <h3>Commerce &amp; distribution</h3>
+          <p>Fourniture de biens et équipements, approvisionnement, distribution de produits et représentation commerciale.</p>
+          <a href="services.html#commerce" class="service-link">Découvrir <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card">
+          <span class="service-num">04</span>
+          <div class="service-icon"><i class="fa-solid fa-seedling"></i></div>
+          <h3>Prestations agricoles</h3>
+          <p>Conseil agricole, appui aux coopératives, montage de projets, formation des producteurs et fourniture d'intrants.</p>
+          <a href="services.html#agricole" class="service-link">Découvrir <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- POURQUOI NOUS CHOISIR -->
+  <section class="why-us" id="pourquoi">
+    <div class="container">
+      <div class="why-inner">
+
+        <div class="why-left">
+          <span class="section-label">Notre différence</span>
+          <h2>Pourquoi nous<br>choisir ?</h2>
+          <p>Un cabinet de proximité qui allie expertise technique, rigueur professionnelle et engagement humain au service de vos projets.</p>
+          <a href="a-propos.html" class="btn-outline why-btn">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="why-right">
+          <div class="why-item">
+            <div class="why-num">01</div>
+            <div class="why-content">
+              <h4>Expertise multidisciplinaire</h4>
+              <p>Quatre pôles d'activité couvrant la comptabilité, le conseil, le commerce et l'agriculture — une offre complète et intégrée.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-num">02</div>
+            <div class="why-content">
+              <h4>Équipe qualifiée</h4>
+              <p>Des consultants expérimentés, avec une solide connaissance du tissu économique ivoirien et de la sous-région.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-num">03</div>
+            <div class="why-content">
+              <h4>Accompagnement personnalisé</h4>
+              <p>Chaque client bénéficie d'un suivi sur mesure, adapté à la réalité de son secteur et à ses objectifs spécifiques.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-num">04</div>
+            <div class="why-content">
+              <h4>Respect des délais</h4>
+              <p>Un engagement ferme sur les calendriers de livraison, pour que vos décisions soient toujours prises au bon moment.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-num">05</div>
+            <div class="why-content">
+              <h4>Confidentialité garantie</h4>
+              <p>Vos données et informations sensibles sont traitées avec le plus haut niveau de discrétion et de sécurité.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TÉMOIGNAGES -->
+  <section class="testimonials" id="temoignages">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-label">Ce qu'on dit de nous</span>
+        <h2>Témoignages clients</h2>
+        <p class="section-sub">La confiance de nos clients est notre meilleure référence.</p>
+      </div>
+
+      <div class="testi-grid">
+
+        <div class="testi-card">
+          <div class="testi-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p>« L'OMBILIC nous a accompagnés dans la mise en conformité fiscale de notre entreprise avec une rigueur et une disponibilité exemplaires. Un vrai partenaire de confiance. »</p>
+          <div class="testi-author">
+            <div class="testi-avatar">K</div>
+            <div>
+              <strong>Kouamé A.</strong>
+              <span>Directeur, PME Abidjan</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p>« Grâce à l'étude de faisabilité réalisée par L'OMBILIC, notre projet agricole a pu être financé. Leur expertise terrain est indéniable. »</p>
+          <div class="testi-author">
+            <div class="testi-avatar">F</div>
+            <div>
+              <strong>Fatou D.</strong>
+              <span>Porteur de projet, Yamoussoukro</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p>« La formation en gestion organisée pour nos équipes a transformé notre façon de piloter l'activité. Professionnalisme et pédagogie au rendez-vous. »</p>
+          <div class="testi-author">
+            <div class="testi-avatar">M</div>
+            <div>
+              <strong>Mamadou T.</strong>
+              <span>Président, Coopérative agricole</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <img src="/assets/Logo_1.jpeg" alt="L'OMBILIC" width="58">
+          <p>Cabinet multidisciplinaire de prestations en assistance comptable, études, conseil, commerce et développement agricole.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:lombilicsarl@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="services.html">Nos services</a></li>
+            <li><a href="realisations.html">Réalisations</a></li>
+            <li><a href="actualites.html">Actualités</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Nos services</h4>
+          <ul>
+            <li><a href="services.html#comptable">Assistance comptable &amp; fiscale</a></li>
+            <li><a href="services.html#etudes">Études, conseil &amp; formation</a></li>
+            <li><a href="services.html#commerce">Commerce &amp; distribution</a></li>
+            <li><a href="services.html#agricole">Prestations agricoles</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-location-dot"></i> Cocody – Angré 8e Tranche,<br>Carrefour Prière, Abidjan</li>
+            <li><i class="fa-solid fa-phone"></i> +225 27 24 58 96 08</li>
+            <li><i class="fa-regular fa-envelope"></i> lombilicsarl@gmail.com</li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 L'OMBILIC SARL &nbsp;·&nbsp; RCCM CI-ABJ-03-2024-B13-00370 &nbsp;·&nbsp; N° CC 2400146V</p>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>

@@ -398,7 +398,6 @@ button, input, textarea, select { font: inherit; }
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
-  margin-bottom: 5rem;
 }
 
 .about-text p {
@@ -725,9 +724,10 @@ button, input, textarea, select { font: inherit; }
    ÉQUIPE
    ============================================= */
 .team-section {
-  margin-top: 5rem;
-  padding-top: 4rem;
-  border-top: 1px solid var(--border);
+  padding: 6rem 0;
+  background-color: #f4f7fb;
+  background-image: radial-gradient(circle, rgba(26, 95, 133, 0.07) 1px, transparent 1px);
+  background-size: 22px 22px;
 }
 
 .team-header {
@@ -1035,5 +1035,625 @@ button, input, textarea, select { font: inherit; }
 
   .topbar-logo img {
     width: 54px;
+  }
+}
+
+
+/* =============================================
+   BOUTON OUTLINE
+   ============================================= */
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: var(--secondary-dark);
+  border: 2px solid var(--secondary-dark);
+  padding: 0.75rem 1.8rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  transition: background var(--transition), color var(--transition), border-color var(--transition), transform var(--transition);
+}
+
+.btn-outline:hover {
+  background: var(--secondary-dark);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.about-cta {
+  text-align: center;
+  margin-top: 3.5rem;
+}
+
+
+/* =============================================
+   NOS DOMAINES D'EXPERTISE
+   ============================================= */
+.services {
+  padding: 6rem 0;
+  background: var(--surface);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.service-card {
+  position: relative;
+  padding: 2.5rem 2rem 2rem;
+  background: var(--background);
+  border-radius: 4px;
+  border-top: 3px solid transparent;
+  overflow: hidden;
+  transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+
+.service-card:hover {
+  border-top-color: var(--primary);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(26, 95, 133, 0.1);
+}
+
+.service-num {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: rgba(15, 61, 87, 0.05);
+  line-height: 1;
+  user-select: none;
+  transition: color var(--transition);
+}
+
+.service-card:hover .service-num {
+  color: rgba(241, 179, 16, 0.1);
+}
+
+.service-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  background: rgba(241, 179, 16, 0.1);
+  border: 1px solid rgba(241, 179, 16, 0.2);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.4rem;
+  position: relative;
+  z-index: 1;
+  transition: background var(--transition), border-color var(--transition);
+}
+
+.service-card:hover .service-icon {
+  background: rgba(241, 179, 16, 0.2);
+  border-color: var(--primary);
+}
+
+.service-icon i {
+  color: var(--primary);
+  font-size: 1.15rem;
+}
+
+.service-card h3 {
+  font-size: 1rem;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+  line-height: 1.35;
+  position: relative;
+  z-index: 1;
+}
+
+.service-card p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  font-weight: 300;
+  margin-bottom: 1.4rem;
+  position: relative;
+  z-index: 1;
+}
+
+.service-link {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--primary);
+  letter-spacing: 0.05em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  position: relative;
+  z-index: 1;
+  transition: gap var(--transition);
+}
+
+.service-link i {
+  font-size: 0.7rem;
+  transition: transform var(--transition);
+}
+
+.service-link:hover {
+  gap: 0.7rem;
+}
+
+.service-link:hover i {
+  transform: translateX(2px);
+}
+
+
+/* =============================================
+   POURQUOI NOUS CHOISIR
+   ============================================= */
+.why-us {
+  padding: 6rem 0;
+  background: var(--background);
+  background-image: radial-gradient(circle, rgba(26, 95, 133, 0.05) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+.why-inner {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.why-left {
+  position: sticky;
+  top: 2rem;
+}
+
+.why-left .section-label {
+  margin-bottom: 0.6rem;
+  display: block;
+}
+
+.why-left h2 {
+  font-size: clamp(1.9rem, 3vw, 2.6rem);
+  color: var(--text);
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+}
+
+.why-left > p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.85;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.why-item {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr;
+  gap: 1.5rem;
+  padding: 1.8rem 0;
+  border-bottom: 1px solid var(--border);
+  align-items: start;
+  transition: padding-left var(--transition);
+}
+
+.why-item:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.why-item:hover {
+  padding-left: 0.5rem;
+}
+
+.why-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1;
+  padding-top: 0.15rem;
+}
+
+.why-content h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.4rem;
+}
+
+.why-content p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+
+/* =============================================
+   TÉMOIGNAGES
+   ============================================= */
+.testimonials {
+  padding: 6rem 0;
+  background: var(--secondary-dark);
+}
+
+.testimonials .section-label {
+  color: var(--primary);
+}
+
+.testimonials .section-header h2 {
+  color: #fff;
+}
+
+.testimonials .section-sub {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.testi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.8rem;
+}
+
+.testi-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  padding: 2.5rem 2.2rem;
+  transition: background var(--transition), border-color var(--transition);
+}
+
+.testi-card:hover {
+  background: rgba(255, 255, 255, 0.09);
+  border-color: rgba(241, 179, 16, 0.4);
+}
+
+.testi-quote {
+  color: var(--primary);
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+  opacity: 0.65;
+}
+
+.testi-card > p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.9;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.testi-author {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 1.2rem;
+}
+
+.testi-avatar {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.testi-author strong {
+  display: block;
+  font-size: 0.88rem;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+}
+
+.testi-author span {
+  font-size: 0.73rem;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+
+/* =============================================
+   FOOTER
+   ============================================= */
+.site-footer {
+  background: #080f1a;
+  padding: 5rem 0 0;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.4fr;
+  gap: 4rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.footer-brand img {
+  border-radius: 6px;
+  margin-bottom: 1.2rem;
+}
+
+.footer-brand p {
+  font-size: 0.85rem;
+  line-height: 1.85;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.footer-social {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.footer-social a {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
+}
+
+.footer-social a:hover {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
+.footer-col h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 1.4rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 2px solid var(--primary);
+  display: inline-block;
+}
+
+.footer-col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.footer-col ul li a {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.5);
+  transition: color var(--transition), padding-left var(--transition);
+  display: inline-block;
+}
+
+.footer-col ul li a:hover {
+  color: var(--primary);
+  padding-left: 4px;
+}
+
+.footer-contact {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.footer-contact li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  font-size: 0.84rem;
+  line-height: 1.6;
+}
+
+.footer-contact li i {
+  color: var(--primary);
+  font-size: 0.8rem;
+  margin-top: 0.22rem;
+  flex-shrink: 0;
+}
+
+.footer-bottom {
+  padding: 1.4rem 0;
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.25);
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+
+/* =============================================
+   PAGE BANNER (sous-pages)
+   ============================================= */
+.page-banner {
+  position: relative;
+  min-height: 46vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.page-banner-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('/assets/hero1.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.page-banner-inner {
+  position: relative;
+  z-index: 10;
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  padding: 3rem 0 4rem;
+}
+
+.page-banner-inner .section-label {
+  color: var(--primary);
+  margin-bottom: 0.6rem;
+  display: block;
+}
+
+.page-banner-inner h1 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 0.8rem;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.page-banner-inner p {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.68);
+  max-width: 520px;
+  line-height: 1.8;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.breadcrumb a {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color var(--transition);
+}
+
+.breadcrumb a:hover { color: var(--primary); }
+
+.breadcrumb i { font-size: 0.6rem; }
+
+.breadcrumb span { color: var(--primary); }
+
+.nav-active {
+  color: var(--primary) !important;
+}
+
+.nav-active::after {
+  transform: scaleX(1) !important;
+}
+
+
+/* =============================================
+   VMV SECTION (standalone — page à propos)
+   ============================================= */
+.vmv-section {
+  padding: 6rem 0;
+  background: var(--surface);
+}
+
+
+/* =============================================
+   RESPONSIVE — nouvelles sections (≤ 900px)
+   ============================================= */
+@media (max-width: 900px) {
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .why-left {
+    position: static;
+  }
+
+  .testi-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .page-banner {
+    min-height: 50vh;
+  }
+}
+
+
+/* =============================================
+   RESPONSIVE — nouvelles sections (≤ 600px)
+   ============================================= */
+@media (max-width: 600px) {
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testi-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+  }
+
+  .about-cta {
+    margin-top: 2rem;
+  }
+
+  .page-banner {
+    min-height: 55vh;
+  }
+
+  .vmv-section {
+    padding: 3.5rem 0;
+  }
+
+  .team-section {
+    padding: 3.5rem 0;
+  }
+
+  .services {
+    padding: 3.5rem 0;
+  }
+
+  .why-us {
+    padding: 3.5rem 0;
+  }
+
+  .testimonials {
+    padding: 3.5rem 0;
   }
 }
