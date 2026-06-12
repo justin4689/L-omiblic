@@ -1,4 +1,4 @@
-/* =============================================
+﻿/* =============================================
    RESET & VARIABLES
    ============================================= */
 *, *::before, *::after {
@@ -1656,6 +1656,525 @@ button, input, textarea, select { font: inherit; }
   }
 }
 
+
+/* =============================================
+   PAGE RÉALISATIONS
+   ============================================= */
+
+/* ── Chiffres clés ── */
+.real-stats {
+  background: var(--secondary-dark);
+  padding: 4.5rem 0;
+}
+
+.real-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
+
+.real-stat {
+  text-align: center;
+  padding: 1rem 2rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.real-stat:last-child {
+  border-right: none;
+}
+
+.real-stat-number {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.4rem, 4vw, 3.5rem);
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.real-stat-number sup {
+  font-size: 1.4rem;
+  vertical-align: super;
+}
+
+.real-stat-label {
+  display: block;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* ── Intro ── */
+.real-intro {
+  padding: 6rem 0;
+  background: var(--surface);
+}
+
+.real-intro-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.real-intro-text .section-label {
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.real-intro-text h2 {
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+  color: var(--text);
+  margin-bottom: 1.25rem;
+}
+
+.real-intro-text p {
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.real-intro-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.real-intro-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.real-intro-list li i {
+  color: var(--primary);
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.real-intro-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--primary-dark);
+  font-weight: 600;
+  font-size: 0.88rem;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  border-bottom: 1px solid var(--primary);
+  padding-bottom: 0.15rem;
+  transition: opacity var(--transition);
+}
+
+.real-intro-cta:hover {
+  opacity: 0.75;
+}
+
+.real-intro-domains {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-content: start;
+}
+
+.real-domain-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1.25rem 1.4rem;
+  transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+
+.real-domain-card:hover {
+  border-color: var(--primary);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.real-domain-card--full {
+  grid-column: 1 / -1;
+}
+
+.real-domain-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 4px;
+  background: rgba(241, 179, 16, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.real-domain-icon i {
+  font-size: 1.1rem;
+  color: var(--primary-dark);
+}
+
+.real-domain-info h5 {
+  font-size: 0.87rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0 0 0.2rem;
+}
+
+.real-domain-info span {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* ── Portfolio ── */
+.real-portfolio {
+  padding: 6rem 0;
+  background-color: #f4f7fb;
+  background-image: radial-gradient(circle, rgba(26, 95, 133, 0.07) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+.portfolio-filters {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 3.5rem;
+}
+
+.filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 1.35rem;
+  border-radius: 999px;
+  border: 1.5px solid var(--border);
+  background: var(--surface);
+  color: var(--text-muted);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn i {
+  font-size: 0.75rem;
+}
+
+.filter-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary-dark);
+}
+
+.filter-btn.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+  font-weight: 600;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+}
+
+.portfolio-card {
+  position: relative;
+  background: var(--surface);
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+/* Ligne dorée qui se déploie au survol */
+.portfolio-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+  z-index: 2;
+}
+
+.portfolio-card:hover::before {
+  transform: scaleX(1);
+}
+
+.portfolio-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 50px rgba(15, 23, 42, 0.12);
+  border-color: rgba(241, 179, 16, 0.4);
+}
+
+.portfolio-card-img {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+
+.portfolio-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  display: block;
+}
+
+.portfolio-card:hover .portfolio-card-img img {
+  transform: scale(1.07);
+}
+
+.portfolio-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(15, 61, 87, 0.85) 0%, transparent 55%);
+  opacity: 0;
+  transition: opacity var(--transition);
+  display: flex;
+  align-items: flex-end;
+  padding: 1.1rem;
+}
+
+.portfolio-card:hover .portfolio-card-overlay {
+  opacity: 1;
+}
+
+.pf-overlay-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  background: var(--primary);
+  color: #fff;
+}
+
+.portfolio-card-body {
+  padding: 1.5rem;
+}
+
+.portfolio-tag {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.8rem;
+  border-radius: 999px;
+  margin-bottom: 0.8rem;
+  color: var(--primary-dark);
+  background: rgba(241, 179, 16, 0.1);
+  border: 1px solid rgba(241, 179, 16, 0.35);
+}
+
+.portfolio-card-body h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  color: var(--text);
+  margin: 0 0 0.65rem;
+  line-height: 1.35;
+}
+
+.portfolio-card-body p {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  line-height: 1.65;
+  margin: 0 0 1.1rem;
+}
+
+.portfolio-meta {
+  display: flex;
+  gap: 1.25rem;
+  font-size: 0.74rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.portfolio-meta i {
+  color: var(--primary-dark);
+  margin-right: 0.2rem;
+}
+
+/* État vide */
+.portfolio-empty {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 4rem;
+  color: var(--text-muted);
+}
+
+.portfolio-empty i {
+  font-size: 2.5rem;
+}
+
+/* ── Témoignages réalisations ── */
+.real-testi {
+  padding: 6rem 0;
+  background: var(--surface);
+}
+
+.real-testi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.real-testi-card {
+  background: var(--background);
+  border-radius: 4px;
+  padding: 2.2rem;
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+}
+
+.real-testi-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(241, 179, 16, 0.5);
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+}
+
+.real-testi-stars {
+  display: flex;
+  gap: 0.25rem;
+  color: var(--primary);
+  font-size: 0.85rem;
+}
+
+.real-testi-card blockquote {
+  font-style: italic;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.75;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.real-testi-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.real-testi-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.real-testi-info strong {
+  display: block;
+  font-size: 0.88rem;
+  color: var(--text);
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+}
+
+.real-testi-info span {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* ── Réalisations responsive ── */
+@media (max-width: 900px) {
+  .real-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .real-stat {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 1.5rem;
+  }
+
+  .real-stat:nth-child(odd) {
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .real-stat:nth-child(3),
+  .real-stat:nth-child(4) {
+    border-bottom: none;
+  }
+
+  .real-intro-inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .real-testi-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .real-stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-filters {
+    gap: 0.45rem;
+  }
+
+  .filter-btn {
+    font-size: 0.75rem;
+    padding: 0.45rem 1rem;
+  }
+
+  .real-intro-domains {
+    grid-template-columns: 1fr;
+  }
+
+  .real-domain-card--full {
+    grid-column: auto;
+  }
+}
 
 /* =============================================
    NAV — DROPDOWN (CSS pur)
