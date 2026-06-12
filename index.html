@@ -39,9 +39,17 @@
         <i class="fa-solid fa-bars"></i>
       </button>
       <ul class="nav-links">
-        <li><a href="index.html">Accueil</a></li>
+        <li><a href="index.html" class="nav-active">Accueil</a></li>
         <li><a href="a-propos.html">À propos</a></li>
-        <li><a href="#services">Services</a></li>
+        <li class="has-dropdown">
+          <a href="#services" class="dropdown-toggle">Services <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="nav-dropdown">
+            <li><a href="services-comptable.html"><i class="fa-solid fa-calculator"></i> Assistance comptable &amp; fiscale</a></li>
+            <li><a href="services-etudes.html"><i class="fa-solid fa-lightbulb"></i> Études, conseil &amp; formation</a></li>
+            <li><a href="services-commerce.html"><i class="fa-solid fa-cart-shopping"></i> Commerce &amp; distribution</a></li>
+            <li><a href="services-agricole.html"><i class="fa-solid fa-seedling"></i> Prestations agricoles</a></li>
+          </ul>
+        </li>
         <li><a href="realisations.html">Réalisations</a></li>
         <li><a href="actualites.html">Actualités</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -152,7 +160,7 @@
           <div class="service-icon"><i class="fa-solid fa-calculator"></i></div>
           <h3>Assistance comptable, fiscale &amp; sociale</h3>
           <p>Tenue de comptabilité, états financiers, déclarations fiscales, gestion de la paie et suivi des obligations sociales.</p>
-          <a href="services.html#comptable" class="service-link">Découvrir <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="services-comptable.html" class="service-link">Découvrir <i class="fa-solid fa-arrow-right"></i></a>
         </div>
 
         <div class="service-card">
@@ -160,15 +168,15 @@
           <div class="service-icon"><i class="fa-solid fa-lightbulb"></i></div>
           <h3>Études, conseil &amp; formation</h3>
           <p>Études de faisabilité, plans d'affaires, conseil en gestion, renforcement des capacités et formation professionnelle.</p>
-          <a href="services.html#etudes" class="service-link">Découvrir <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="services-etudes.html" class="service-link">Découvrir <i class="fa-solid fa-arrow-right"></i></a>
         </div>
 
         <div class="service-card">
           <span class="service-num">03</span>
-          <div class="service-icon"><i class="fa-solid fa-boxes-stacking"></i></div>
+          <div class="service-icon"><i class="fa-solid fa-cart-shopping"></i></div>
           <h3>Commerce &amp; distribution</h3>
           <p>Fourniture de biens et équipements, approvisionnement, distribution de produits et représentation commerciale.</p>
-          <a href="services.html#commerce" class="service-link">Découvrir <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="services-commerce.html" class="service-link">Découvrir <i class="fa-solid fa-arrow-right"></i></a>
         </div>
 
         <div class="service-card">
@@ -176,7 +184,7 @@
           <div class="service-icon"><i class="fa-solid fa-seedling"></i></div>
           <h3>Prestations agricoles</h3>
           <p>Conseil agricole, appui aux coopératives, montage de projets, formation des producteurs et fourniture d'intrants.</p>
-          <a href="services.html#agricole" class="service-link">Découvrir <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="services-agricole.html" class="service-link">Découvrir <i class="fa-solid fa-arrow-right"></i></a>
         </div>
 
       </div>
@@ -319,10 +327,10 @@
         <div class="footer-col">
           <h4>Nos services</h4>
           <ul>
-            <li><a href="services.html#comptable">Assistance comptable &amp; fiscale</a></li>
-            <li><a href="services.html#etudes">Études, conseil &amp; formation</a></li>
-            <li><a href="services.html#commerce">Commerce &amp; distribution</a></li>
-            <li><a href="services.html#agricole">Prestations agricoles</a></li>
+            <li><a href="services-comptable.html">Assistance comptable &amp; fiscale</a></li>
+            <li><a href="services-etudes.html">Études, conseil &amp; formation</a></li>
+            <li><a href="services-commerce.html">Commerce &amp; distribution</a></li>
+            <li><a href="services-agricole.html">Prestations agricoles</a></li>
           </ul>
         </div>
 
@@ -341,6 +349,7 @@
       </div>
     </div>
   </footer>
+
 
 </body>
 </html>

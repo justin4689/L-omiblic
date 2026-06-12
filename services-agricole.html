@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prestations agricoles – L'OMBILIC</title>
+  <link rel="shortcut icon" href="assets/hero2.jpg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="topbar-logo">
+        <img src="/assets/Logo_1.jpeg" alt="Logo L'OMBILIC" width="72">
+      </div>
+      <div class="topbar-contacts">
+        <span><i class="fa-regular fa-envelope"></i> lombilicsarl@gmail.com</span>
+        <span><i class="fa-solid fa-phone"></i> +225 27 24 58 96 08</span>
+        <span><i class="fa-solid fa-location-dot"></i> Cocody – Angré 8e Tranche, Abidjan</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE BANNER -->
+  <section class="page-banner">
+    <div class="page-banner-bg"></div>
+    <div class="hero-overlay"></div>
+
+    <nav class="hero-nav" id="hero-nav">
+      <button class="nav-hamburger" aria-label="Ouvrir le menu" onclick="document.getElementById('hero-nav').classList.toggle('open')">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li class="has-dropdown">
+          <a href="index.html#services" class="dropdown-toggle nav-active">Services <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="nav-dropdown">
+            <li><a href="services-comptable.html"><i class="fa-solid fa-calculator"></i> Assistance comptable &amp; fiscale</a></li>
+            <li><a href="services-etudes.html"><i class="fa-solid fa-lightbulb"></i> Études, conseil &amp; formation</a></li>
+            <li><a href="services-commerce.html"><i class="fa-solid fa-cart-shopping"></i> Commerce &amp; distribution</a></li>
+            <li><a href="services-agricole.html" class="nav-active"><i class="fa-solid fa-seedling"></i> Prestations agricoles</a></li>
+          </ul>
+        </li>
+        <li><a href="realisations.html">Réalisations</a></li>
+        <li><a href="actualites.html">Actualités</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-cta">Devis gratuit</button>
+    </nav>
+
+    <div class="page-banner-inner">
+      <div class="container">
+        <span class="section-label">Nos services</span>
+        <h1>Prestations<br>agricoles</h1>
+        <p>Un accompagnement complet pour les acteurs du secteur agricole ivoirien : producteurs, coopératives et porteurs de projets.</p>
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+          <a href="index.html">Accueil</a>
+          <i class="fa-solid fa-chevron-right"></i>
+          <a href="index.html#services">Services</a>
+          <i class="fa-solid fa-chevron-right"></i>
+          <span>Prestations agricoles</span>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="service-intro">
+    <div class="container">
+      <div class="service-intro-inner">
+        <div class="service-intro-icon">
+          <i class="fa-solid fa-seedling"></i>
+        </div>
+        <div class="service-intro-text">
+          <h2>Au cœur du développement agricole de la Côte d'Ivoire</h2>
+          <p>L'agriculture est un moteur essentiel du développement économique de la Côte d'Ivoire. L'OMBILIC accompagne les producteurs, coopératives et porteurs de projets agricoles dans l'optimisation de leurs activités, de la planification stratégique à l'évaluation des résultats, en passant par la formation et l'accès aux intrants.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRESTATIONS -->
+  <section class="service-prestations">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Nos prestations</span>
+        <h2>Ce que nous proposons</h2>
+        <p class="section-sub">Des services agricoles sur mesure pour développer et pérenniser vos activités de production.</p>
+      </div>
+      <div class="prestations-grid">
+
+        <div class="prestation-item">
+          <div class="prestation-item-icon"><i class="fa-solid fa-seedling"></i></div>
+          <h4>Conseil agricole</h4>
+          <p>Accompagnement technique et stratégique des producteurs pour l'amélioration des pratiques culturales, de la productivité et de la qualité des récoltes.</p>
+        </div>
+
+        <div class="prestation-item">
+          <div class="prestation-item-icon"><i class="fa-solid fa-people-roof"></i></div>
+          <h4>Appui aux coopératives</h4>
+          <p>Renforcement organisationnel, appui à la gestion et à la gouvernance des coopératives agricoles pour améliorer leur performance collective.</p>
+        </div>
+
+        <div class="prestation-item">
+          <div class="prestation-item-icon"><i class="fa-solid fa-diagram-project"></i></div>
+          <h4>Montage de projets agricoles</h4>
+          <p>Élaboration de dossiers de projets agricoles bankables : étude de faisabilité, business plan, recherche de financement et stratégie de mise en œuvre.</p>
+        </div>
+
+        <div class="prestation-item">
+          <div class="prestation-item-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h4>Formation des producteurs</h4>
+          <p>Sessions de formation pratiques sur les bonnes pratiques agricoles, la gestion des exploitations et l'utilisation raisonnée des intrants.</p>
+        </div>
+
+        <div class="prestation-item">
+          <div class="prestation-item-icon"><i class="fa-solid fa-flask"></i></div>
+          <h4>Fourniture d'intrants</h4>
+          <p>Approvisionnement en semences, engrais, produits phytosanitaires et autres intrants agricoles de qualité, à des conditions avantageuses.</p>
+        </div>
+
+        <div class="prestation-item">
+          <div class="prestation-item-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h4>Suivi-évaluation de projets agricoles</h4>
+          <p>Mise en place de systèmes de suivi, collecte de données terrain, rapports d'avancement et évaluation des impacts des projets agricoles.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTRES SERVICES -->
+  <section class="other-services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Explorer</span>
+        <h2>Nos autres domaines d'expertise</h2>
+      </div>
+      <div class="other-services-grid">
+        <a href="services-comptable.html" class="other-service-card">
+          <div class="other-service-card-icon"><i class="fa-solid fa-calculator"></i></div>
+          <div>
+            <h4>Assistance comptable &amp; fiscale</h4>
+            <span>Découvrir <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="services-etudes.html" class="other-service-card">
+          <div class="other-service-card-icon"><i class="fa-solid fa-lightbulb"></i></div>
+          <div>
+            <h4>Études, conseil &amp; formation</h4>
+            <span>Découvrir <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="services-commerce.html" class="other-service-card">
+          <div class="other-service-card-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+          <div>
+            <h4>Commerce &amp; distribution</h4>
+            <span>Découvrir <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="service-cta">
+    <div class="container">
+      <h2>Un projet agricole à développer ?</h2>
+      <p>Nos experts vous accompagnent du terrain à la recherche de financement.</p>
+      <div class="service-cta-btns">
+        <a href="devis.html" class="btn-primary-light"><i class="fa-solid fa-file-lines"></i> Demander un devis</a>
+        <a href="contact.html" class="btn-outline-light"><i class="fa-solid fa-phone"></i> Nous contacter</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="/assets/Logo_1.jpeg" alt="L'OMBILIC" width="58">
+          <p>Cabinet multidisciplinaire de prestations en assistance comptable, études, conseil, commerce et développement agricole.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:lombilicsarl@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="index.html#services">Nos services</a></li>
+            <li><a href="realisations.html">Réalisations</a></li>
+            <li><a href="actualites.html">Actualités</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Nos services</h4>
+          <ul>
+            <li><a href="services-comptable.html">Assistance comptable &amp; fiscale</a></li>
+            <li><a href="services-etudes.html">Études, conseil &amp; formation</a></li>
+            <li><a href="services-commerce.html">Commerce &amp; distribution</a></li>
+            <li><a href="services-agricole.html">Prestations agricoles</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-location-dot"></i> Cocody – Angré 8e Tranche,<br>Carrefour Prière, Abidjan</li>
+            <li><i class="fa-solid fa-phone"></i> +225 27 24 58 96 08</li>
+            <li><i class="fa-regular fa-envelope"></i> lombilicsarl@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 L'OMBILIC SARL &nbsp;·&nbsp; RCCM CI-ABJ-03-2024-B13-00370 &nbsp;·&nbsp; N° CC 2400146V</p>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>
