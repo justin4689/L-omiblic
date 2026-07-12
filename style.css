@@ -728,9 +728,46 @@ button, input, textarea, select { font: inherit; }
   margin-bottom: 3rem;
 }
 
+.team-pole {
+  margin-bottom: 3.5rem;
+}
+
+.team-pole:last-child {
+  margin-bottom: 0;
+}
+
+.team-pole-head {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-bottom: 1.8rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--border);
+}
+
+.team-pole-icon {
+  width: 2.8rem;
+  height: 2.8rem;
+  flex-shrink: 0;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: #fff;
+  font-size: 1.15rem;
+  box-shadow: 0 6px 18px rgba(26, 95, 133, 0.22);
+}
+
+.team-pole-title {
+  font-size: 1.35rem;
+  color: var(--secondary);
+  margin: 0;
+}
+
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.8rem;
 }
 
@@ -797,6 +834,38 @@ button, input, textarea, select { font: inherit; }
   line-height: 1.75;
   margin-bottom: 1.2rem;
   font-weight: 300;
+}
+
+.team-skills {
+  list-style: none;
+  text-align: left;
+  margin: 0.4rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.team-skills li {
+  position: relative;
+  padding-left: 1.3rem;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  font-weight: 300;
+}
+
+.team-skills li:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.team-skills li::before {
+  content: "\f00c";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 0.05rem;
+  font-size: 0.68rem;
+  color: var(--primary);
 }
 
 .team-links {
@@ -1993,6 +2062,22 @@ button, input, textarea, select { font: inherit; }
   color: var(--text);
   margin: 0 0 0.65rem;
   line-height: 1.35;
+}
+
+.pf-badge {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.4rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  background: rgba(26, 95, 133, 0.1);
+  color: var(--primary);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .portfolio-card-body p {
