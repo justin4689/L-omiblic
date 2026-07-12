@@ -758,15 +758,14 @@ button, input, textarea, select { font: inherit; }
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  background: var(--primary);
   color: #fff;
   font-size: 1.15rem;
-  box-shadow: 0 6px 18px rgba(26, 95, 133, 0.22);
 }
 
 .team-pole-title {
   font-size: 1.35rem;
-  color: var(--secondary);
+  color: var(--secondary-dark);
   margin: 0;
 }
 
